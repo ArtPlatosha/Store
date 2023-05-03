@@ -44,6 +44,22 @@ section	{
     padding: 5rem 7%;
 }
 
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .9rem 3rem;
+    border-radius: 10rem;
+    border: .1rem solid var(--primary);
+    font-size: 1.7rem;
+    color: var(--primary);
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
 .header {
     position: fixed;
     top: 0;
@@ -92,4 +108,31 @@ section	{
 
 #menu-bar {
     display: none;
+}
+
+.home {
+    min-height: 110vh;
+    display: flex;
+    background: url(../images/home.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+}
+
+.home .content {
+    max-width: 60rem;
+    padding-top: 8rem;
+}
+
+.home .content h3 {
+    font-size: 7rem;
+    color: var(--black);
+    line-height: 1.2;
+}
+
+.home .content p {
+    font-size: 1.5rem;
+    padding: 1.3rem 0;
+    color: var(--light-black);
+    line-height: 2;
 }
