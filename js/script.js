@@ -18,7 +18,28 @@ var swiper = new Swiper ('.featured-slider', {
 			slidesPerView: 2,
 		},
 		991: {
-			slidesPerView: 3
+			slidesPerView: 3,
+		},
+	},
+});
+
+var swiper = new Swiper ('.brand-slider', {
+	loop: true,
+	grabCursor: true,
+	spaceBetween: 20,
+	autoplay: {
+		delay: 2500,
+		disableOnInteraction: false,
+	},
+	breakpoints: {
+		0: {
+			slidesPerView: 2,
+		},
+		768: {
+			slidesPerView: 3,
+		},
+		991: {
+			slidesPerView: 5,
 		},
 	},
 });
