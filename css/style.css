@@ -60,6 +60,20 @@ section	{
     color: var(--white);
 }
 
+.heading {
+    text-align: center;
+    font-size: 4rem;
+    color: var(--black);
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 3rem;
+}
+
+.heading span {
+    color: var(--primary);
+    text-transform: uppercase;
+}
+
 .header {
     position: fixed;
     top: 0;
@@ -180,4 +194,98 @@ section	{
 
 .banner .box-container .box:hover .content {
     display: flex;
+}
+
+.products {
+    background-color: var(--bg);
+}
+
+.products .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    gap: 2rem;
+}
+
+.products .box-container .box {
+    background-color: var(--white);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    height: 100%;
+    border: var(--border);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.products .box-container .box .image img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.products .box-container .box .image .rear-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity .4s ease-out;
+}
+
+.products .box-container .box:hover .image .rear-img {
+    opacity: 1;
+    z-index: 0;
+}
+
+.products .box-container .box .content {
+    padding: 2rem;
+    padding-top: 0;
+}
+
+.products .box-container .box .content h3 {
+    color: var(--black);
+    font-size: 2.2rem;
+}
+
+.products .box-container .box .content .price {
+    display: inline-block;
+    color: var(--primary);
+    font-size: 2.2rem;
+}
+
+.products .box-container .box .content .stars {
+    padding: 1rem 0;
+}
+
+.products .box-container .box .content .stars i {
+    font-size: 1.5rem;
+    color: gold;
+}
+
+.products .box-container .box .content .fa-shopping-cart,
+.products .box-container .box .content .fa-heart,
+.products .box-container .box .content .fa-eye {
+    text-align: center;
+    width: 4.5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: .5rem;
+    background: none;
+    cursor: pointer;
+    font-size: 2rem;
+    color: var(--primary);
+    border: .1rem solid var(--primary);
+}
+
+.products .box-container .box .content .fa-heart,
+.products .box-container .box .content .fa-eye {
+    margin-left: 0.5rem;
+}
+
+.products .box-container .box .content .fa-shopping-cart:hover,
+.products .box-container .box .content .fa-heart:hover,
+.products .box-container .box .content .fa-eye:hover {
+    color: var(--white);
+    background-color: var(--primary);
+    box-shadow: var(--box-shadow);
+    transition: .4s linear;
 }
