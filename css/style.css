@@ -471,3 +471,7 @@ section	{
 .swiper-button-prev::after {
     font-size: 2rem;
 }
+
+.brand .brand-slider .slide {
+    text-align: center;
+}
