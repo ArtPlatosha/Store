@@ -343,3 +343,131 @@ section	{
     font-size: 1.7rem;
     line-height: 1.3;
 }
+
+.featured {
+    background-color: var(--bg);
+}
+
+.featured .featured-slider .slide {
+    border-radius: .5rem;
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+}
+
+.featured .featured-slider .slide .icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--hover);
+    height: 45rem;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    z-index: 1;
+    gap: .5rem;
+}
+
+.featured .featured-slider .slide:hover .icons {
+    transform: scale(1);
+}
+
+.featured .featured-slider .slide .icons a {
+    font-size: 2rem;
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    text-align: center;
+    background-color: var(--white);
+    color: var(--white);
+    -webkit-text-stroke: 0.1rem var(--primary);
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.featured .featured-slider .slide .icons a:hover {
+    color: var(--primary);
+}
+
+.featured .featured-slider .slide .image {
+    height: 45rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.featured .featured-slider .slide .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.featured .featured-slider .slide:hover .image img {
+    transform: scale(1.1);
+}
+
+.featured .featured-slider .slide .content {
+    padding: 1rem 1.5rem;
+    text-align: center;
+}
+
+.featured .featured-slider .slide .content h3 {
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.featured .featured-slider .slide .content .price {
+    padding: .5rem 0;
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.featured .featured-slider .slide .content .price .amount {
+    font-size: 2.2rem;
+    font-weight: bolder;
+    color: var(--primary);
+}
+
+.featured .featured-slider .slide .content .price .cut {
+    text-decoration: line-through;
+    font-size: 1.5rem;
+    color: var(--light-black);
+}
+
+.featured .featured-slider .slide .content .price .off {
+    color: red;
+    font-size: 2rem;
+}
+
+.featured .featured-slider .slide .content .stars {
+    font-size: 1.7rem;
+}
+
+.featured .featured-slider .slide .content .stars i {
+    color: gold;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    height: 5rem;
+    width: 5rem;
+    border-radius: .5rem;
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    color: var(--primary);
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 2rem;
+}
