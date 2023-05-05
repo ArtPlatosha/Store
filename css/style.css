@@ -555,3 +555,56 @@ section	{
     align-items: center;
     justify-content: space-between;
 }
+
+.contact .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+}
+
+.contact .row .image {
+    flex: 1 1 40rem;
+}
+
+.contact .row .image img {
+    width: 100%;
+}
+
+.contact .row form {
+    flex: 1 1 52rem;
+    padding: 2rem;
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+}
+
+.contact .row form h3 {
+    font-size: 3rem;
+    padding-bottom: 1rem;
+    color: var(--primary);
+}
+
+.contact .row form .inputBox input,
+.contact .row form textarea {
+    padding: 1rem 1.2rem;
+    border: var(--border);
+    border-radius: .5rem;
+    font-size: 1.6rem;
+    color: var(--primary);
+    margin: .7rem 0;
+    width: 100%;
+}
+
+.contact .row form textarea  {
+    height: 15rem;
+    resize: none;
+}
+
+.contact .row form .btn {
+    background-color: none;
+}
+
+.contact .row form .btn:hover {
+    background-color: var(--primary);
+}
